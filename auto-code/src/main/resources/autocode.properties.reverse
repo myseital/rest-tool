@@ -1,0 +1,61 @@
+#mysql db properties
+db_schema=db_reverse
+db_url=jdbc:mysql://127.0.0.1:3306/db_reverse?characterEncoding=UTF-8
+db_user=root
+db_pwd=123456
+
+
+#java和db的命名规则
+#underline下划线  or camel驼峰
+db_name_rule=under_line
+java_name_rule=camel
+
+
+##domain_path等一系列path请先手动新建,怕你们配错把你们东西删了和覆盖了.
+#db to domain&dto
+gen_domain=true
+domain_table_names=all
+package_domain=cn.gov.zcy.reverse.model
+domain_path=/Users/sekishuu/views/free/sf-code/sf-autocode/src/main/resources/outer/model/
+#################
+gen_dto=true
+extends_domain=true
+dto_table_names=all
+package_dto=cn.gov.zcy.reverse.dto
+dto_path=/Users/sekishuu/views/free/sf-code/sf-autocode/src/main/resources/outer/dto/
+
+#mybatis domain to mapper
+gen_mapper=true
+mapper_class_names=all
+#得先有class文件的生成,是根据Class.forName进行的,所以得先生成domain
+date_to_now=createdAt,updatedAt
+mapper_id_dynamic_condition_exclude=id,createdAt,updatedAt,createAt,updateAt
+mapper_sql_ids=create,creates,update,paging,count,load,list,delete,deletes
+mapper_path=/Users/sekishuu/views/free/sf-code/sf-autocode/src/main/resources/outer/mapper
+
+
+#默认dao的类名和domain都是一致的,domain类名+Dao
+#生成 dao
+gen_dao=true
+dao_file_names=all
+#dao引入domain的包路径
+dao_package_domain=cn.gov.zcy.reverse.model
+dao_package_extend=com.dtdream.vanyar.utils.mybatis.BaseMyBatisDao
+package_dao=cn.gov.zcy.reverse.dao
+dao_path=/Users/sekishuu/views/free/sf-code/sf-autocode/src/main/resources/outer/dao/
+
+#默认manager的类名和domain都是一致的,domain类名+Manger
+#生成manager
+gen_manager=false
+manager_file_names=
+#manager引入dao的包路径
+manager_package_dao=cn.gov.zcy.reverse.dao
+package_manager=cn.gov.zcy.reverse.manager
+manager_path=/Users/sekishuu/views/free/sf-code/sf-autocode/src/main/resources/outer/
+
+
+
+
+
+
+

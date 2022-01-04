@@ -1,10 +1,10 @@
 package com.mao.design.design.pattern.structural.proxy.staticproxy;
 
 
-import com.mao.core.design.pattern.structural.proxy.IOrderService;
-import com.mao.core.design.pattern.structural.proxy.Order;
-import com.mao.core.design.pattern.structural.proxy.OrderServiceImpl;
-import com.mao.core.design.pattern.structural.proxy.db.DataSourceContextHolder;
+import com.mao.design.design.pattern.structural.proxy.IOrderService;
+import com.mao.design.design.pattern.structural.proxy.Order;
+import com.mao.design.design.pattern.structural.proxy.OrderServiceImpl;
+import com.mao.design.design.pattern.structural.proxy.db.DataSourceContextHolder;
 
 /**
  * @author maojiawei

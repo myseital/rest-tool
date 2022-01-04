@@ -1,8 +1,9 @@
 package com.mao.design.design.pattern.structural.proxy.dynamicproxy;
 
 
-import com.mao.core.design.pattern.structural.proxy.Order;
-import com.mao.core.design.pattern.structural.proxy.db.DataSourceContextHolder;
+
+import com.mao.design.design.pattern.structural.proxy.Order;
+import com.mao.design.design.pattern.structural.proxy.db.DataSourceContextHolder;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

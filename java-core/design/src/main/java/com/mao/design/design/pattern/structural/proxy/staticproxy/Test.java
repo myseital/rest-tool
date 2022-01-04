@@ -1,7 +1,7 @@
 package com.mao.design.design.pattern.structural.proxy.staticproxy;
 
 
-import com.mao.core.design.pattern.structural.proxy.Order;
+import com.mao.design.design.pattern.structural.proxy.Order;
 
 /**
  * @author maojiawei
