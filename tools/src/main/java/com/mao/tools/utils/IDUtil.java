@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * 各种id生成策略
  */
-public class IDUtils {
+public class IDUtil {
 
     /**
      * 图片名生成
