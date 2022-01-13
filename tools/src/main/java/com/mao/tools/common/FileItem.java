@@ -1,4 +1,6 @@
-package com.mao.tools;
+package com.mao.tools.common;
+
+import com.mao.tools.common.Constants;
 
 import java.io.File;
 import java.io.FileInputStream;

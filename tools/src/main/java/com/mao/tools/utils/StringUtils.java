@@ -1,6 +1,6 @@
 package com.mao.tools.utils;
 
-import com.mao.tools.Constants;
+import com.mao.tools.common.Constants;
 
 import java.beans.BeanInfo;
 import java.beans.Introspector;

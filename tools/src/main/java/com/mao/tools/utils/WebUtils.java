@@ -26,8 +26,8 @@ import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-import com.mao.tools.Constants;
-import com.mao.tools.FileItem;
+import com.mao.tools.common.Constants;
+import com.mao.tools.common.FileItem;
 
 /**
  * 网络工具类

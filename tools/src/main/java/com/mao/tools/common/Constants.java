@@ -1,4 +1,4 @@
-package com.mao.tools;
+package com.mao.tools.common;
 
 /**
  * 公用常量类
