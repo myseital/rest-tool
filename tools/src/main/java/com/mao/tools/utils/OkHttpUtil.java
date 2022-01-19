@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  * @author myseital
  **/
 @Slf4j
-public class OKHttpUtil {
+public class OkHttpUtil {
 
     private static final MediaType MEDIA_TYPE_JSON = MediaType.get(SdkConstant.CONTENT_TYPE_JSON);
     private static final MediaType MEDIA_TYPE_FORM = MediaType.get(SdkConstant.CONTENT_TYPE_FORM);
