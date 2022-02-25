@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency9;
+package com.mao.concurrency.executor;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;

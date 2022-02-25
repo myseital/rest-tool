@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency5;
+package com.mao.concurrency;
 
 /*
     CountDownLatch
@@ -7,7 +7,7 @@ package com.mao.concurrency.concurrency5;
 import java.util.concurrent.CountDownLatch;
 import java.util.stream.IntStream;
 
-public class MyTest1 {
+public class CountDownLatchTest {
 
     public static void main(String[] args) {
         CountDownLatch countDownLatch = new CountDownLatch(3);

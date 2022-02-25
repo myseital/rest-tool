@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency4;
+package com.mao.concurrency;
 /*
     传统上，我们可以通过synchronized关键字 + wait + notify/notifyAll 来实现多个线程之间的协调与通信，整个过程都是由JVM来帮助
     我们实现的；开发者无需（也是无法）了解底层的实现细节
@@ -17,7 +17,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.IntStream;
 
-public class MyTest2 {
+public class LockTest {
+
     public static void main(String[] args) {
         BoundedContainer boundedContainer = new BoundedContainer();
 

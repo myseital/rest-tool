@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency9;
+package com.mao.concurrency.executor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -23,7 +23,7 @@ import java.util.stream.IntStream;
  */
 
 
-public class MyTest1 {
+public class ExecutorsInitTest {
 
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(3);

@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency8;
+package com.mao.concurrency.aqs;
 
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -41,7 +41,7 @@ import java.util.stream.IntStream;
 */
 
 
-public class MyTest2 {
+public class ReentrantReadWriteLockTest {
 
     private ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
 
@@ -63,8 +63,8 @@ public class MyTest2 {
     }
 
     public static void main(String[] args) {
-        MyTest2 myTest2 = new MyTest2();
+        ReentrantReadWriteLockTest reentrantReadWriteLockTest = new ReentrantReadWriteLockTest();
 
-        IntStream.range(0, 10).forEach(i -> new Thread(myTest2::method).start());
+        IntStream.range(0, 10).forEach(i -> new Thread(reentrantReadWriteLockTest::method).start());
     }
 }

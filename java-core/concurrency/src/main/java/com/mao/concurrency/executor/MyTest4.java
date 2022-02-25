@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency9;
+package com.mao.concurrency.executor;
 
 import java.util.concurrent.*;
 import java.util.stream.IntStream;

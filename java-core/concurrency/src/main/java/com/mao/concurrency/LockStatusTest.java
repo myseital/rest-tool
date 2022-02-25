@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency3;
+package com.mao.concurrency;
 /*
     死锁：线程1等待线程2互斥持有的资源，而线程2也在等待线程1互斥持有的资源，两个线程都无法继续执行
     活锁：线程持续重试一个总是失败的操作，导致无法继续执行
@@ -6,7 +6,7 @@ package com.mao.concurrency.concurrency3;
          的线程可以执行，饿死也叫做无限延迟
  */
 
-public class MyTest6 {
+public class LockStatusTest {
 
     private Object lock1 = new Object();
 
@@ -29,11 +29,11 @@ public class MyTest6 {
     }
 
     public static void main(String[] args) {
-        MyTest6 myTest6 = new MyTest6();
+        LockStatusTest lockStatusTest = new LockStatusTest();
 
         Runnable runnable1 = () -> {
             while (true) {
-                myTest6.myMethod1();
+                lockStatusTest.myMethod1();
 
                 try {
                     Thread.sleep(100);
@@ -47,7 +47,7 @@ public class MyTest6 {
 
         Runnable runnable2 = () -> {
             while (true) {
-                myTest6.myMethod2();
+                lockStatusTest.myMethod2();
 
                 try {
                     Thread.sleep(220);

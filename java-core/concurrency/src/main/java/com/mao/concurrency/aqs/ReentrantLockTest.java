@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency8;
+package com.mao.concurrency.aqs;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -23,7 +23,7 @@ import java.util.stream.IntStream;
  */
 
 
-public class MyTest1 {
+public class ReentrantLockTest {
 
     private Lock lock = new ReentrantLock();
 
@@ -45,11 +45,11 @@ public class MyTest1 {
     }
 
     public static void main(String[] args) {
-        MyTest1 myTest1 = new MyTest1();
+        ReentrantLockTest reentrantLockTest = new ReentrantLockTest();
 
         IntStream.range(0, 10).forEach(i -> {
             new Thread(() -> {
-                myTest1.method();
+                reentrantLockTest.method();
             }).start();
         });
     }

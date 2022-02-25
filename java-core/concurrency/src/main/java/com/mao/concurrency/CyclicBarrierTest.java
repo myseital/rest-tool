@@ -1,4 +1,4 @@
-package com.mao.concurrency.concurrency5;
+package com.mao.concurrency;
 /*
     CyclicBarrier
  */
@@ -17,7 +17,7 @@ import java.util.concurrent.CyclicBarrier;
     6. 以上所有执行流程均在lock锁的控制范围内，不会出现并发情况。
  */
 
-public class MyTest2 {
+public class CyclicBarrierTest {
 
     public static void main(String[] args) {
         CyclicBarrier cyclicBarrier = new CyclicBarrier(3, () -> {
