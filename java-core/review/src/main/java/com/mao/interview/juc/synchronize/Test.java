@@ -1,4 +1,4 @@
-package com.mao.interview.juc.synchronized_test;
+package com.mao.interview.juc.synchronize;
 
 /**
  * zz2 zz
